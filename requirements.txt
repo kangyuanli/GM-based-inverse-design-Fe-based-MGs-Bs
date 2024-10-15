@@ -1,0 +1,9 @@
+
+torch==2.4.0
+torchvision==0.15.0
+numpy==2.1.0
+pandas==2.2.2
+matplotlib==3.9.2
+tqdm==4.68.0
+scikit-learn==1.5.1
+geatpy==1.0.4
