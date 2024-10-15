@@ -1,8 +1,6 @@
 
 # Generative-model-based-inverse-design-of-Fe-based-metallic-glasses-with-high-Bs
 
-This repository contains the implementation of a generative model-based inverse design approach for discovering Fe-based metallic glasses (MGs) with high saturation magnetic flux density (Bs). The repository leverages machine learning models to explore the vast composition space of metallic glasses, helping to discover new materials without manual intervention.
-
 ## File Descriptions:
 
 - **WAE_model.py**: Defines the Wasserstein Autoencoder model, which is designed to learn latent space representations of Fe-based MG compositions and predict the magnetic property (Bs).
