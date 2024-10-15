@@ -21,36 +21,6 @@ To install the required dependencies, use the following command:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Usage
-
-### Training the Model:
-Run `train.py` to train the Wasserstein Autoencoder model:
-
-```bash
-python train.py
-```
-
-### Predicting Bs Values:
-Run `predict.py` to generate new compositions and predict Bs values from the latent space:
-
-```bash
-python predict.py
-```
-
-### Optimization:
-Run the following command to explore the latent space using optimization algorithms (e.g., Genetic Algorithm):
-
-```bash
-python Optimizer.py --method GA
-```
-
-### Data
-
-Make sure the following input data files are present in the working directory:
-- **Composition_feature.txt**: Contains the composition data of metallic glasses.
-- **Bs_target.txt**: Contains the corresponding Bs values for the compositions.
-
 ## License
 
 This project is licensed under the MIT License.
