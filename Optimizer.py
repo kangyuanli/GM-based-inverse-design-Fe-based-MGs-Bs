@@ -1,6 +1,6 @@
 def obj_func(geneinfo):
     """
-    Objective function that takes a gene (latent feature vector) as input and returns the predicted property (Bs value) from the WAE model.
+    Objective function that takes a gene (latent feature vector) as input and returns the predicted property (Bs value) from the predictor model.
     """
     params = {
         'num_epoch': 400,
@@ -102,7 +102,7 @@ def GA_optimization(feature_dimension):
     compositions_str_list = []
     bs_values_list = []
 
-    for i in range(1):
+    for i in range(50):
         random_z = 8.0 * torch.randn((2000, 16)).to(device)
         lb_list = random_z.min(dim=0).values.cpu().numpy()
         ub_list = random_z.max(dim=0).values.cpu().numpy()
@@ -156,7 +156,7 @@ def PSO_optimization(feature_dimension):
     compositions_str_list = []
     bs_values_list = []
 
-    for i in range(1):
+    for i in range(50):
         random_z = 8.0 * torch.randn((2000, 16)).to(device)
         lb_list = random_z.min(dim=0).values.cpu().numpy()
         ub_list = random_z.max(dim=0).values.cpu().numpy()
