@@ -96,7 +96,7 @@ def train_VAE(train_data_loader, vae, optimizer, num_epochs=400, device='cuda'):
         print(f'Average Reconstruction Loss: {avg_recon_loss:.6f}')
 
     # Save the loss values for further use
-    torch.save(vae.state_dict(), 'vae_inverse_design_model.pth')
+    torch.save(vae.state_dict(), '')
 
     # Plot reconstruction loss over epochs
     plt.figure()
