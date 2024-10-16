@@ -1,7 +1,6 @@
 def obj_func(geneinfo):
     """
-    Objective function that takes a gene (latent feature vector) as input and returns the reciprocal 
-    of the predicted property (Bs value) from the WAE model.
+    Objective function that takes a gene (latent feature vector) as input and returns the predicted property (Bs value) from the WAE model.
     """
     params = {
         'num_epoch': 400,
